@@ -3,8 +3,8 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 import numpy as np
 import matplotlib.pyplot as plt
 
-train_dir = r'C:\Users\bhgsk\PycharmProjects\TensorflowPractioner\flower_photos\train'
-val_dir = r'C:\Users\bhgsk\PycharmProjects\TensorflowPractioner\flower_photos\val'
+train_dir = r'C:\Users\bhgsk\.keras\datasets\flower_photos\train'
+val_dir = r'C:\Users\bhgsk\.keras\datasets\flower_photos\val'
 image_gen = ImageDataGenerator(rescale=1. / 255, horizontal_flip=True, zoom_range=0.5, rotation_range=45,
                                width_shift_range=0.15, height_shift_range=0.15)
 batch_size = 100
@@ -33,7 +33,7 @@ model.summary()
 history = model.fit_generator(
     train_data_gen,
     steps_per_epoch=int(np.ceil(train_data_gen.n / float(batch_size))),
-    epochs=80,
+    epochs=40,
     validation_data=val_data_gen,
     validation_steps=int(np.ceil(val_data_gen.n / float(batch_size)))
 )
@@ -44,7 +44,7 @@ val_acc = history.history['val_accuracy']
 loss = history.history['loss']
 val_loss = history.history['val_loss']
 
-epochs_range = range(80)
+epochs_range = range(40)
 
 plt.figure(figsize=(8, 8))
 plt.subplot(1, 2, 1)
