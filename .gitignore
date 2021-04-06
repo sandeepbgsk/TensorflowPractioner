@@ -112,3 +112,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+*.xml
+*.exe
+*.iml
+*.xml
+.idea/workspace.xml
+code/Scripts/get_objgraph
+code/Scripts/undill
