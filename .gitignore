@@ -119,3 +119,4 @@ dmypy.json
 .idea/workspace.xml
 code/Scripts/get_objgraph
 code/Scripts/undill
+*.h5
