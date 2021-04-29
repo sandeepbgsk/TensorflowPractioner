@@ -120,3 +120,8 @@ dmypy.json
 code/Scripts/get_objgraph
 code/Scripts/undill
 *.h5
+.virtual_documents/IMDB_sent_analysis.ipynb.py
+.virtual_documents/Course_3_Week_2_Lesson_1.ipynb.py
+.virtual_documents/TFNLP.ipynb.py
+.virtual_documents/Untitled.ipynb.py
+.idea/workspace.xml
